@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4dlernen GmbH | e-learning & Virtuelles Training</title>
+    <meta name="description"
+        content="4dlernen GmbH - Ihr Experte für moderne Brandschutzunterweisung, virtuelle Trainings und e-learning im Bereich Feuerwehr und Brandschutz.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal as a modern accent
+                            600: '#0d9488',
+                            900: '#134e4a',
+                            dark: '#0f172a', // Slate 900
+                            red: '#e11d48', // Rose 600 for fire/alert concepts
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.15) 0%, transparent 60%),
+                url('https://images.unsplash.com/photo-1583526362016-c3137c71cc3a?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(90deg, #fff, #cbd5e1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="text-3xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#leistungen"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
+                    <a href="#e-learning"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">e-learning</a>
+                    <a href="#unternehmen"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für
+                        Unternehmen</a>
+                    <a href="#aktuelles"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Aktuelles</a>
+                    <a href="#kontakt"
+                        class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">Kontakt</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-brand-dark focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-screen flex items-center relative pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark/90 px-4"></div>
+        <div class="max-w-7xl mx-auto relative z-10 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-up">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-8">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                        Wir machen virtuelles Training real
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                        Ausbildung <br>
+                        <span class="text-brand-500">4.0</span> erleben.
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-10 max-w-lg leading-relaxed">
+                        e-learning und virtuelles Training für Brandschutz, Feuerwehr und Unternehmen. Realitätsnah,
+                        sicher und innovativ.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#leistungen"
+                            class="px-8 py-4 rounded-full bg-brand-500 text-white font-bold hover:bg-brand-600 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:-translate-y-1">
+                            Lösungen entdecken
+                        </a>
+                        <a href="#kontakt"
+                            class="px-8 py-4 rounded-full bg-white/10 text-white border border-white/20 font-bold hover:bg-white/20 backdrop-blur-sm transition-all">
+                            Beratung anfragen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Categories (Wählen Sie aus...) -->
+    <section id="leistungen" class="py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-20 animate-fade-in-up" style="animation-delay: 0.1s;">
+                <h2 class="text-brand-red font-semibold tracking-wider uppercase text-sm mb-3">Wählen Sie aus...</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Unsere Kernkompetenzen</h3>
+                <div class="w-20 h-1.5 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-10 card-hover transition-all duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-100 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-500 transition-all duration-300">
+                        <i
+                            class="fa-solid fa-laptop text-2xl text-brand-500 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">e-learning</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        e-learning steht für "elektronisch unterstütztes Lernen". Mit Hilfe von elektronischen Medien
+                        werden Lerninhalte realitätsnah vermittelt.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#3D-Modelle</span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Animationen</span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#24/7</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-10 card-hover transition-all duration-300 border border-gray-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <i class="fa-solid fa-vr-cardboard text-9xl"></i>
+                    </div>
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-red/10 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-brand-red transition-all duration-300 relative z-10">
+                        <i
+                            class="fa-solid fa-vr-cardboard text-2xl text-brand-red group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4 relative z-10">Virtuelles Training</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed relative z-10">
+                        Die ideale Ergänzung, um kritische Lagen und Situationen zu trainieren. Von Expertenanwendungen
+                        bis zum Training für Anfänger.
+                    </p>
+                    <div class="flex flex-wrap gap-2 relative z-10">
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Feuerlöschtrainer</span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Planübung</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-10 card-hover transition-all duration-300 border border-gray-100 group">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-dark flex items-center justify-center mb-8 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                        <i class="fa-solid fa-cubes text-2xl text-white"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Spezifische Lösungen</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sie benötigen eine spezielle Lösung? Ihre Firma möchte virtuelles Training anbieten? Kein
+                        Problem - wir helfen weiter!
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Individual</span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#wirmachendas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive Sections -->
+    <section id="e-learning" class="py-24 bg-brand-dark text-white overflow-hidden relative">
+        <div
+            class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+        <div
+            class="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-red rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Erweitertes e-learning Portfolio</h2>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        Nutzen Sie unsere digitalen Schulungsprogramme, um gesetzliche Vorgaben effizient und nachhaltig
+                        zu erfüllen. Interaktiv, verständlich und ortsunabhängig.
+                    </p>
+
+                    <ul class="space-y-6">
+                        <li
+                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
+                                <i class="fa-solid fa-fire text-brand-500 group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-1">Brandschutzunterweisung</h5>
+                                <p class="text-gray-400 text-sm">Die jährliche Pflichtunterweisung digital und
+                                    rechtssicher absolvieren.</p>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
+                                <i class="fa-solid fa-helmet-safety text-brand-500 group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-1">Brandschutzhelfer</h5>
+                                <p class="text-gray-400 text-sm">Theoretische Ausbildung der Brandschutzhelfer nach DGUV
+                                    Information 205-023 via e-learning.</p>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
+                                <i class="fa-solid fa-truck-fast text-brand-500 group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xl font-bold mb-1">Blaulichtfahrt</h5>
+                                <p class="text-gray-400 text-sm">Prävention und Sensibilisierung für Sonder- und
+                                    Wegerechte im Straßenverkehr.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000"
+                        alt="E-Learning Dashboard" class="rounded-3xl shadow-2xl border-4 border-white/10">
+                    <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center gap-4 text-brand-dark">
+                            <i class="fa-solid fa-shield-check text-4xl text-brand-500"></i>
+                            <div>
+                                <div class="font-bold text-xl">Zertifiziert</div>
+                                <div class="text-sm font-medium text-gray-500">Rechtssichere Nachweise</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brandschutz für Unternehmen -->
+    <section id="unternehmen" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Brandschutz für Unternehmen</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Branchenspezifische Lösungen, die exakt auf die Vorgaben und Besonderheiten Ihres Arbeitsumfelds
+                    zugeschnitten sind.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors">
+                        <i class="fa-solid fa-stethoscope text-2xl text-blue-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz in der Arztpraxis</h4>
+                    <p class="text-gray-500 text-sm">Spezifische Gefahren von Sauerstoffflaschen, Lasern und
+                        Laborbereichen.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green-500 transition-colors">
+                        <i
+                            class="fa-solid fa-prescription-bottle-medical text-2xl text-green-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz in der Apotheke</h4>
+                    <p class="text-gray-500 text-sm">Umgang mit brennbaren Flüssigkeiten, Chemikalien und
+                        Lagervorschriften.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-purple-50 flex items-center justify-center mb-6 group-hover:bg-purple-500 transition-colors">
+                        <i class="fa-solid fa-building text-2xl text-purple-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz im Unternehmen</h4>
+                    <p class="text-gray-500 text-sm">Gewerbliche Lösungen für Verwaltung, Produktion und
+                        Logistikzentrum.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-brand-50 flex items-center justify-center mb-6 group-hover:bg-brand-500 transition-colors">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-brand-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Ausbildungskonzept</h4>
+                    <p class="text-gray-500 text-sm">Didaktisch aufbereitete Konzepte zur nachhaltigen
+                        Wissensvermittlung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aktuelles & Veranstaltungen -->
+    <section id="aktuelles" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Aktuelles & Veranstaltungen</h2>
+                    <div class="w-20 h-1.5 bg-brand-red rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog entry 1 -->
+                <div
+                    class="rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800"
+                            alt="FeuerTrutz"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-dark">
+                            Apr 14, 2023</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold text-brand-red uppercase tracking-wider mb-2">Veranstaltungen
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">FeuerTrutz 2023</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Besuchen Sie uns auf der Feuertrutz 2023 in Halle 4 –
+                            Stand 119. Datum: 21. + 22.06.2023</p>
+                    </div>
+                </div>
+
+                <!-- Blog entry 2 -->
+                <div
+                    class="rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&q=80&w=800"
+                            alt="DAKEP"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-dark">
+                            Apr 14, 2023</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold text-brand-red uppercase tracking-wider mb-2">Veranstaltungen
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">DAKEP-Symposium 2023</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">Industrie-Forum in Köln – 15. + 16.05.2023. Besuchen
+                            Sie uns und testen Sie den virtuellen Feuerlöschtrainer.</p>
+                    </div>
+                </div>
+
+                <!-- Blog entry 3 -->
+                <div
+                    class="rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800"
+                            alt="Interschutz"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand-dark">
+                            Jun 26, 2019</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-xs font-semibold text-brand-500 uppercase tracking-wider mb-2">Uncategorized
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">Interschutz 2022!</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">#wirsinddabei #e-learning #Ausbildung 4.0. Messe
+                            Hannover, Halle 17 – Stand J26.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontakt" class="bg-brand-dark text-white pt-24 pb-12 relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-500/10 rounded-full filter blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-gray-800 pb-16">
+                <div class="lg:col-span-2">
+                    <div class="text-3xl font-extrabold tracking-tight text-white flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                    <p class="text-gray-400 max-w-sm mb-6 leading-relaxed">
+                        Wir digitalisieren den Brandschutz. 4dlernen GmbH ist Ihr Partner für zukunftsorientierte
+                        e-learning Lösungen und VR-Simulationen.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-500 hover:text-white transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-500 hover:text-white transition-colors">
+                            <i class="fa-brands fa-xing"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-gray-400">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-500"></i>
+                            <span>4dlernen GmbH <br>Untere Weidenstraße 9 <br>81543 München</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fa-solid fa-phone text-brand-500"></i>
+                            <a href="tel:+498945208917" class="hover:text-white transition-colors">+49 89 45208917</a>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-400">
+                            <i class="fa-solid fa-envelope text-brand-500"></i>
+                            <a href="mailto:info@4dlernen.de"
+                                class="hover:text-white transition-colors">info@4dlernen.de</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Rechtliches</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-white transition-colors">Datenschutzerklärung</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Allgemeine
+                                Geschäftsbedingungen</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>&copy; 2026 4dlernen GmbH. Alle Rechte vorbehalten.</p>
+                <p>Diese Webseite wird gehostet von manitu Webhosting.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navbar scroll script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md', 'py-0');
+                nav.style.height = '4.5rem';
+            } else {
+                nav.classList.remove('shadow-md', 'py-0');
+                nav.style.height = '6rem';
+            }
+        });
+    </script>
+</body>
+
+</html>
