@@ -45,6 +45,17 @@ Das komplette System wird in einem robusten Schutzkoffer untergebracht. Das sieh
 - Sicherer Transport: Spezialangefertigte Inlays garantieren, dass Laptops, Kabel, Controller und Zubehör wackelfrei und stoßsicher lagern.
 - Einfache Logistik: Das System kann von nur einer Person mühelos bewegt werden. Dank integrierter Rollen und einem ausziehbaren Griff lässt sich der Koffer rollen wie ein Reise-Trolley.
 
+**Vergleich: VR-Training vs. Klassisches Brandschutz-Training**
+
+| Kriterium | Virtuelles VR-Training (4dlernen) | Klassisches Brandschutz-Training |
+| :--- | :--- | :--- |
+| **Trainingsobjekt** | **Echter, umgebauter Feuerlöscher** (1:1 in Größe & Gewicht) | Echter Feuerlöscher |
+| **Kosten & Verbrauchsmaterial** | Keine laufenden Kosten (kein Gas, kein Löschmittel) | Hohe Kosten für Gas, Wiederbefüllung und Entsorgung |
+| **Sicherheit & Unfallrisiko** | 100% sicher, gefahrlos trainieren ohne echte Flammen | Restrisiko durch echtes Feuer, Hitze und Druck |
+| **Flexibilität & Wetter** | Wetterunabhängig, In- und Outdoor nutzbar | Stark wetterabhängig (Wind/Regen), meist nur Outdoor |
+| **Rüstzeit (Auf- & Abbau)** | Sofort einsatzbereit (Plug & Play) | Aufwändiger Aufbau, Genehmigungen oft nötig |
+| **Umwelt & Nachhaltigkeit** | Null CO2-Ausstoß, kein giftiges Löschwasser | Umweltbelastung durch CO2, Rauch und Löschmittelreste |
+
 ---
 
 ## 360° Szenarien (szenarien.html)
