@@ -57,13 +57,13 @@
         }
 
         .hero-pattern {
-            background-color: rgba(15, 23, 42, 0.05);
-            /* reduced opacity to 0.05 per request */
+            background-color: rgba(15, 23, 42, 0);
+            /* reduced opacity to 0 per request */
             background-image: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.15) 0%, transparent 60%),
                 url('images/Doppelloescher.jpg');
             background-size: cover;
             background-position: center;
-            background-blend-mode: overlay;
+            background-blend-mode: normal;
         }
 
         .text-gradient {
@@ -155,15 +155,15 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#leistungen"
+                    <a href="leistungen.html"
                         class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
-                    <a href="#vr-trainer"
+                    <a href="vr-trainer.html"
                         class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">VR-Trainer</a>
-                    <a href="#unternehmen"
+                    <a href="unternehmen.html"
                         class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für
                         Unternehmen</a>
-                    <a href="#kontakt"
-                        class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">Kontakt</a>
+                    <a href="kontakt.html"
+                        class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -178,7 +178,7 @@
 
     <!-- Hero Section -->
     <section class="hero-pattern min-h-screen flex items-center relative pt-20 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark/90 px-4"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark/30 px-4"></div>
         <div class="max-w-7xl mx-auto relative z-10 w-full">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="animate-fade-in-up">
@@ -196,11 +196,11 @@
                         sicher und innovativ für Unternehmen jeder Größe.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#vr-trainer"
+                        <a href="vr-trainer.html"
                             class="px-8 py-4 rounded-full bg-brand-500 text-white font-bold hover:bg-brand-600 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] hover:-translate-y-1">
                             VR-Trainer entdecken
                         </a>
-                        <a href="#kontakt"
+                        <a href="kontakt.html"
                             class="px-8 py-4 rounded-full bg-white/10 text-white border border-white/20 font-bold hover:bg-white/20 backdrop-blur-sm transition-all">
                             Beratung anfragen
                         </a>
@@ -238,7 +238,10 @@
                             Umgebung</strong>. Die innovative und sichere Möglichkeit, den richtigen Umgang realistisch
                         zu üben – ganz ohne echte Flammen.
                     </p>
-                    <div class="flex flex-wrap gap-2 relative z-10 mt-auto">
+                    <a href="vr-trainer.html"
+                        class="mt-4 text-brand-500 font-semibold hover:text-brand-600 hover:underline">Mehr erfahren
+                        &rarr;</a>
+                    <div class="flex flex-wrap gap-2 relative z-10 mt-4">
                         <span
                             class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Sicher</span>
                         <span
@@ -259,7 +262,10 @@
                         Wir unterstützen Sie bei der jährlichen Pflichtunterweisung. Professionelle Einweisung in das
                         Verhalten im Brandfall und die Handhabung von Löschgeräten.
                     </p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <a href="leistungen.html"
+                        class="mt-4 text-brand-500 font-semibold hover:text-brand-600 hover:underline">Mehr erfahren
+                        &rarr;</a>
+                    <div class="flex flex-wrap gap-2 mt-4">
                         <span
                             class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#Pflichtunterweisung</span>
                         <span
@@ -279,7 +285,10 @@
                         Fundierte Ausbildung Ihrer Mitarbeiter zu Brandschutzhelfern nach DGUV Information 205-023. Von
                         der Brandverhütung bis zur organisierten Räumung.
                     </p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <a href="leistungen.html"
+                        class="mt-4 text-brand-500 font-semibold hover:text-brand-600 hover:underline">Mehr erfahren
+                        &rarr;</a>
+                    <div class="flex flex-wrap gap-2 mt-4">
                         <span
                             class="text-xs font-semibold px-3 py-1 bg-white border border-gray-200 text-gray-600 rounded-full shadow-sm">#DGUV</span>
                         <span
@@ -299,80 +308,30 @@
             class="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-red rounded-full mix-blend-multiply filter blur-3xl opacity-20">
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Was ist der virtuelle Feuerlöschtrainer? (Echter
-                        Feuerlöscher in virtueller Umgebung)</h2>
-                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                        Der virtuelle Feuerlöschtrainer bietet eine innovative und sichere Möglichkeit, den richtigen
-                        Umgang mit Feuerlöschern realistisch zu trainieren – ganz ohne echte Flammen. Die Feuerlöscher
-                        sind 1:1-Abbilder eines echten Modells – in Größe, Gewicht, Sicherung und Auslösemechanik. Die
-                        virtuelle Umgebung zeigt verschiedene Brandszenarien (z.B. Fettbrände oder Elektrobrände) und
-                        ermöglicht ein realitätsnahes Training ohne Sicherheitsrisiken oder Materialverbrauch.
-                    </p>
-
-                    <ul class="space-y-6">
-                        <li
-                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
-                            <div
-                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
-                                <i class="fa-solid fa-fire text-brand-500 group-hover:text-white"></i>
-                            </div>
-                            <div>
-                                <h5 class="text-xl font-bold mb-1">Auflade- & Dauerdrucklöscher</h5>
-                                <p class="text-gray-400 text-sm">Präzise Nachbildung beider Bauarten für authentisches
-                                    Erleben der Bedienlogik und Druckverläufe.</p>
-                            </div>
-                        </li>
-                        <li
-                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
-                            <div
-                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
-                                <i class="fa-solid fa-users text-brand-500 group-hover:text-white"></i>
-                            </div>
-                            <div>
-                                <h5 class="text-xl font-bold mb-1">Doppelfeuerlöscher & Teamtraining</h5>
-                                <p class="text-gray-400 text-sm">Gleichzeitiges Arbeiten mit zwei Feuerlöschern
-                                    ermöglicht taktisches Vorgehen und Teambekämpfung.</p>
-                            </div>
-                        </li>
-                        <li
-                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
-                            <div
-                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
-                                <i class="fa-solid fa-panorama text-brand-500 group-hover:text-white"></i>
-                            </div>
-                            <div>
-                                <h5 class="text-xl font-bold mb-1">Maßgeschneiderte 360° Szenarien</h5>
-                                <p class="text-gray-400 text-sm">Nutzen Sie Standard-Brandszenarien oder lassen Sie uns
-                                    Aufnahmen Ihrer eigenen Arbeitsumgebung erstellen.</p>
-                            </div>
-                        </li>
-                        <li
-                            class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors group cursor-default">
-                            <div
-                                class="w-12 h-12 rounded-full bg-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 transition-colors">
-                                <i class="fa-solid fa-suitcase-rolling text-brand-500 group-hover:text-white"></i>
-                            </div>
-                            <div>
-                                <h5 class="text-xl font-bold mb-1">All-In-One System</h5>
-                                <p class="text-gray-400 text-sm">Das komplette System sicher und mobil im Schutzkoffer
-                                    verstaut. Dank Rollen einfach wie ein Trolley zu bewegen.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="lg:w-1/2 relative">
-                    <img src="images/DL.jpg" alt="VR Training Dashboard"
-                        class="rounded-3xl shadow-2xl border-4 border-white/10 w-full object-cover">
-                </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Wie funktioniert der virtuelle Feuerlöschtrainer?</h2>
+            <p class="text-gray-300 text-lg mb-10 max-w-3xl mx-auto leading-relaxed">
+                Der virtuelle Feuerlöschtrainer bietet eine innovative und sichere Möglichkeit, den richtigen Umgang mit
+                Feuerlöschern realistisch zu trainieren – ganz ohne echte Flammen. Erfahren Sie mehr über unsere echten
+                Feuerlöscher in der virtuellen Umgebung, unsere 360°-Szenarien und das All-In-One System.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="vr-trainer.html"
+                    class="px-8 py-4 rounded-full bg-brand-500 text-white font-bold hover:bg-brand-600 transition-all hover:-translate-y-1">
+                    Details ansehen
+                </a>
+                <a href="szenarien.html"
+                    class="px-8 py-4 rounded-full bg-white/10 text-white border border-white/20 font-bold hover:bg-white/20 transition-all">
+                    Zu den Szenarien
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Brandschutz für Unternehmen -->
     <section id="unternehmen" class="py-24 bg-gray-50">
+        <!-- Original content truncated for brevity, but let's just add a button --> class="py-24 bg-gray-50">
+        <!-- Original content truncated for brevity, but let's just add a button --> class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Warum sind branchenspezifische

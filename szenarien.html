@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Brandszenarien & Aufnahmen | 4dlernen GmbH</title>
+    <meta name="description"
+        content="Erfahren Sie alles über die vielfältigen Trainingsszenarien und individuellen 360°-Aufnahmen für unseren virtuellen Feuerlöschtrainer.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            900: '#134e4a',
+                            dark: '#0f172a', // Slate 900
+                            red: '#e11d48', // Rose 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm drop-shadow py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-80 transition">
+                    <div class="text-2xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="leistungen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
+                    <a href="vr-trainer.html" class="text-sm font-bold text-brand-500 transition-colors">VR-Trainer</a>
+                    <a href="unternehmen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für Unternehmen</a>
+                    <a href="kontakt.html" class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 bg-brand-dark text-white relative overflow-hidden">
+        <div
+            class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Trainingsszenarien</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Der virtuelle Feuerlöschtrainer bietet vielfältige Trainingsszenarien, die realistische Brandsituationen
+                abbilden.
+            </p>
+        </div>
+    </header>
+
+    <!-- Section 1: 360° Szenarien Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-600 text-sm font-bold mb-6">
+                    <i class="fa-solid fa-panorama"></i> 360° Szenen
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Welche Brandszenarien und 360°-Trainingsumgebungen sind verfügbar?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Je nach Bedarf kann durch verschiedene Trainingssituationen ideal auf Ihre Bedürfnisse eingegangen
+                    werden. Entdecken Sie unser stetig wachsendes Portfolio an Arbeitsumgebungen.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <img src="images/360_Schaltschrank.png" alt="Schaltschrank Brand"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6 pt-12">
+                        <h3 class="text-white font-bold text-xl">Schaltschrank / Industrie</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <img src="images/360_Bad.png" alt="Badezimmer Brand"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6 pt-12">
+                        <h3 class="text-white font-bold text-xl">Küche & Bad / Privathaushalt</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <img src="images/360_Baum.png" alt="Außenbereich Brand"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6 pt-12">
+                        <h3 class="text-white font-bold text-xl">Außenbereich & Natur</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <img src="images/360_Muell.png" alt="Mülleimer Brand"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6 pt-12">
+                        <h3 class="text-white font-bold text-xl">Abfall & Entsorgung</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <img src="images/360_Oelmull.png" alt="Gefahrstoff Brand"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/90 to-transparent p-6 pt-12">
+                        <h3 class="text-white font-bold text-xl">Gefahrstoffe & Öle</h3>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col items-center justify-center p-8 text-center sm:h-64">
+                    <div
+                        class="w-16 h-16 rounded-full bg-brand-500 text-white flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Weitere Szenarien</h3>
+                    <p class="text-sm text-gray-500">Immer wieder neue, regelmäßige Updates für unsere Software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Individuelle Aufnahmen -->
+    <section class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-500/20 text-brand-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Wie funktionieren individuelle 360°-Aufnahmen Ihrer Arbeitsumgebung?
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Entscheiden Sie! Entweder nutzen Sie die stets verfügbaren, vorhandenen Trainingssituationen aus
+                        unserem Standard-Portfolio, oder <strong>wir nehmen für Sie Ihre ganz eigene Trainingsumgebung
+                            auf.</strong>
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Zusätzlich können so individuelle 360°-Aufnahmen erstellt werden, um das Training exakt an die
+                        spezifischen Gegebenheiten, Maschinen und Bedürfnisse Ihres Unternehmens anzupassen. So entsteht
+                        ein <strong>maßgeschneidertes, praxisnahes Lernerlebnis</strong> für die maximale Sicherheit und
+                        Effektivität Ihrer Mitarbeitenden.
+                    </p>
+                    <div class="mt-8">
+                        <a href="kontakt.html"
+                            class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 text-white rounded-full font-bold hover:bg-brand-600 transition-colors shadow-lg">
+                            Aufnahme anfragen <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
+                        <i class="fa-solid fa-building text-3xl text-brand-400 mb-4 block"></i>
+                        <h4 class="font-bold mb-2">Ihre Firma</h4>
+                        <p class="text-sm text-gray-400">Wir kommen mit unserem 360°-Equipment zu Ihnen vor Ort.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm">
+                        <i class="fa-solid fa-wand-magic-sparkles text-3xl text-brand-400 mb-4 block"></i>
+                        <h4 class="font-bold mb-2">Bearbeitung</h4>
+                        <p class="text-sm text-gray-400">Wir animieren realistische Brände passend zur Perspektive.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-2xl p-6 text-center backdrop-blur-sm col-span-2">
+                        <i class="fa-solid fa-vr-cardboard text-3xl text-brand-400 mb-4 block"></i>
+                        <h4 class="font-bold mb-2">Einsatzbereit</h4>
+                        <p class="text-sm text-gray-400">Ihre Mitarbeiter trainieren sofort in ihrer gewohnten, echten
+                            Abteilung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+                <a href="index.html" class="hover:text-white">Startseite</a>
+                <a href="vr-trainer.html" class="hover:text-white">VR-Trainer</a>
+                <a href="unternehmen.html" class="hover:text-white">Unternehmen</a>
+                <a href="kontakt.html" class="hover:text-white">Impressum & Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

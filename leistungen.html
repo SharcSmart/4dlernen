@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandschutz Leistungen | 4dlernen GmbH</title>
+    <meta name="description"
+        content="Unsere Leistungen im Überblick: Virtueller Feuerlöschtrainer, Brandschutzunterweisung und Ausbildung zum Brandschutzhelfer von der 4dlernen GmbH.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            900: '#134e4a',
+                            dark: '#0f172a', // Slate 900
+                            red: '#e11d48', // Rose 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm drop-shadow py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-80 transition">
+                    <div class="text-2xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="leistungen.html" class="text-sm font-bold text-brand-500 transition-colors">Leistungen</a>
+                    <a href="vr-trainer.html"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">VR-Trainer</a>
+                    <a href="unternehmen.html"
+                        class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für
+                        Unternehmen</a>
+                    <a href="kontakt.html"
+                        class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 bg-brand-dark text-white relative overflow-hidden">
+        <div
+            class="absolute -top-40 -left-40 w-96 h-96 bg-brand-red rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Unsere Leistungen</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Profitieren Sie von unserem holistischen Ansatz im Brandschutz. Von der technischen Innovation bis zur
+                rechtssicheren Unterweisung der Mitarbeiter.
+            </p>
+        </div>
+    </header>
+
+    <!-- Detail Sections -->
+    <section class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-red/10 text-brand-red flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-vr-cardboard"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Virtueller Feuerlöschtrainer</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Trainieren Sie mit einem <strong>echten Feuerlöscher</strong> in einer <strong>virtuellen
+                            Umgebung</strong>. Die innovative und sichere Möglichkeit, den richtigen Umgang realistisch
+                        zu üben – ganz ohne echte Flammen.
+                    </p>
+                    <a href="vr-trainer.html"
+                        class="inline-flex flex-wrap items-center gap-2 mt-4 text-brand-500 font-bold hover:text-brand-600 hover:underline">
+                        Mehr zum VR-Trainer erfahren &rarr;
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="images/DL.jpg" alt="VR Training Dashboard"
+                        class="rounded-3xl shadow-xl w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brandschutzunterweisung -->
+    <section class="py-24 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 bg-white rounded-3xl p-8 border border-gray-100 shadow-sm">
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1"></i> Erfüllt
+                            die jährliche Unterweisungspflicht</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1"></i>
+                            Verhalten im Brandfall</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1"></i>
+                            Richtiges Alarmieren</li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-500 mt-1"></i> Flucht-
+                            und Rettungswege kennenlernen</li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-brand-100 text-brand-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-fire-extinguisher"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Brandschutzunterweisung</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Wir unterstützen Sie bei der jährlichen Pflichtunterweisung. Eine professionelle Einweisung in
+                        das Verhalten im Brandfall und die Handhabung von Löschgeräten ist gesetzlich vorgeschrieben und
+                        rettet im Ernstfall Leben.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brandschutzhelfer -->
+    <section class="py-24 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-white/10 text-white flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ausbildung zum Brandschutzhelfer</h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Fundierte Ausbildung Ihrer Mitarbeiter zu Brandschutzhelfern nach DGUV Information 205-023. Von
+                        der Brandverhütung bis zur organisierten Räumung im Falle eines Feueralarms.
+                    </p>
+                    <a href="kontakt.html"
+                        class="inline-flex px-8 py-4 rounded-full bg-brand-500 text-white font-bold hover:bg-brand-600 transition-all font-bold mt-4 shadow-lg">
+                        Jetzt Kurs anfragen
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800 rounded-2xl p-6 text-center border-t-4 border-brand-500">
+                            <h4 class="font-bold text-white mb-2">Theorie</h4>
+                            <p class="text-sm text-gray-400">Rechtliche Grundlagen & Brandlehre.</p>
+                        </div>
+                        <div class="bg-gray-800 rounded-2xl p-6 text-center border-t-4 border-brand-500">
+                            <h4 class="font-bold text-white mb-2">Praxis</h4>
+                            <p class="text-sm text-gray-400">Handhabung von Feuerlöschern (oft mit VR-Trainer).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+                <a href="index.html" class="hover:text-white">Startseite</a>
+                <a href="vr-trainer.html" class="hover:text-white">VR-Trainer</a>
+                <a href="unternehmen.html" class="hover:text-white">Unternehmen</a>
+                <a href="kontakt.html" class="hover:text-white">Impressum & Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

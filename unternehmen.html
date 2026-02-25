@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandschutz für Unternehmen | 4dlernen GmbH</title>
+    <meta name="description"
+        content="Branchenspezifische Brandschutzlösungen für Ihr Unternehmen: Arztpraxis, Apotheke, Industrie und Verwaltung.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            900: '#134e4a',
+                            dark: '#0f172a', // Slate 900
+                            red: '#e11d48', // Rose 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm drop-shadow py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-80 transition">
+                    <div class="text-2xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="leistungen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
+                    <a href="vr-trainer.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">VR-Trainer</a>
+                    <a href="unternehmen.html" class="text-sm font-bold text-brand-500 transition-colors">Für Unternehmen</a>
+                    <a href="kontakt.html" class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand-dark opacity-90"></div>
+        <div
+            class="absolute -top-40 -left-40 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-64 h-64 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Für Ihr Unternehmen</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Wir bieten maßgeschneiderte Brandschutzkonzepte und branchenspezifische Lösungen.
+            </p>
+        </div>
+    </header>
+
+    <!-- Brandschutz für Unternehmen Details -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Warum sind branchenspezifische
+                    Brandschutzlösungen für Ihr Unternehmen wichtig?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Wir bieten maßgeschneiderte Brandschutzkonzepte und branchenspezifische Lösungen, die exakt auf die
+                    rechtlichen Vorgaben und besonderen Gefahrenquellen Ihres Arbeitsumfelds zugeschnitten sind.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Arztpraxis -->
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors">
+                        <i class="fa-solid fa-stethoscope text-2xl text-blue-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz in der Arztpraxis</h4>
+                    <p class="text-gray-500 text-sm">Spezifische Gefahren von Sauerstoffflaschen, Lasern und
+                        Laborbereichen meistern.</p>
+                </div>
+
+                <!-- Apotheke -->
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green-500 transition-colors">
+                        <i
+                            class="fa-solid fa-prescription-bottle-medical text-2xl text-green-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz in der Apotheke</h4>
+                    <p class="text-gray-500 text-sm">Sicherer Umgang mit brennbaren Flüssigkeiten, Chemikalien und
+                        Lagervorschriften.</p>
+                </div>
+
+                <!-- Unternehmen -->
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-purple-50 flex items-center justify-center mb-6 group-hover:bg-purple-500 transition-colors">
+                        <i class="fa-solid fa-building text-2xl text-purple-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Brandschutz im Unternehmen</h4>
+                    <p class="text-gray-500 text-sm">Gewerbliche Lösungen für Verwaltung, Produktion und
+                        Logistikzentrum.</p>
+                </div>
+
+                <!-- Ausbildungskonzepte -->
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow text-center group">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-brand-50 flex items-center justify-center mb-6 group-hover:bg-brand-500 transition-colors">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-brand-500 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Ausbildungskonzepte</h4>
+                    <p class="text-gray-500 text-sm">Didaktisch aufbereitete Trainingskonzepte zur nachhaltigen
+                        Wissensvermittlung der Mitarbeiter.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="kontakt.html"
+                    class="inline-flex px-8 py-4 rounded-full bg-brand-dark text-white font-bold hover:bg-brand-500 transition-all shadow-lg">
+                    Individuelle Beratung anfordern
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+                <a href="index.html" class="hover:text-white">Startseite</a>
+                <a href="vr-trainer.html" class="hover:text-white">VR-Trainer</a>
+                <a href="leistungen.html" class="hover:text-white">Leistungen</a>
+                <a href="kontakt.html" class="hover:text-white">Impressum & Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
