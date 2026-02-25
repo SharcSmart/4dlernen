@@ -57,9 +57,10 @@
         }
 
         .hero-pattern {
-            background-color: #0f172a;
+            background-color: rgba(15, 23, 42, 0.05);
+            /* reduced opacity to 0.05 per request */
             background-image: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.15) 0%, transparent 60%),
-                url('https://images.unsplash.com/photo-1583526362016-c3137c71cc3a?auto=format&fit=crop&q=80&w=2000');
+                url('images/Doppelloescher.jpg');
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
@@ -233,8 +234,9 @@
                     </div>
                     <h4 class="text-2xl font-bold text-gray-900 mb-4 relative z-10">Virtueller Feuerlöschtrainer</h4>
                     <p class="text-gray-600 mb-6 leading-relaxed relative z-10">
-                        Die innovative und sichere Möglichkeit, den richtigen Umgang mit Feuerlöschern realistisch zu
-                        trainieren – ganz ohne echte Flammen.
+                        Trainieren Sie mit einem <strong>echten Feuerlöscher</strong> in einer <strong>virtuellen
+                            Umgebung</strong>. Die innovative und sichere Möglichkeit, den richtigen Umgang realistisch
+                        zu üben – ganz ohne echte Flammen.
                     </p>
                     <div class="flex flex-wrap gap-2 relative z-10 mt-auto">
                         <span
@@ -298,10 +300,10 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Was ist der virtuelle Feuerlöschtrainer und wie
-                        funktioniert er?</h2>
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Was ist der virtuelle Feuerlöschtrainer? (Echter
+                        Feuerlöscher in virtueller Umgebung)</h2>
                     <p class="text-gray-300 text-lg mb-8 leading-relaxed">
                         Der virtuelle Feuerlöschtrainer bietet eine innovative und sichere Möglichkeit, den richtigen
                         Umgang mit Feuerlöschern realistisch zu trainieren – ganz ohne echte Flammen. Die Feuerlöscher
@@ -361,13 +363,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000"
-                        alt="VR Training Dashboard" class="rounded-3xl shadow-2xl border-4 border-white/10 opacity-60">
-                    <!-- Reusing existing image placeholder -->
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fa-solid fa-vr-cardboard text-8xl text-white drop-shadow-lg"></i>
-                    </div>
+                <div class="lg:w-1/2 relative">
+                    <img src="images/DL.jpg" alt="VR Training Dashboard"
+                        class="rounded-3xl shadow-2xl border-4 border-white/10 w-full object-cover">
                 </div>
             </div>
         </div>
