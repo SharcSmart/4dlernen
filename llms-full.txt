@@ -1,0 +1,130 @@
+# 4dlernen GmbH - Komplette Website-Inhalte
+
+Dieses Dokument enthält den vollständigen Textinhalt der Website der 4dlernen GmbH. Es ist für Large Language Models (LLMs) optimiert.
+
+---
+
+## Startseite (index.html)
+
+**Wir über uns**
+Wir digitalisieren den Brandschutz. 4dlernen GmbH ist Ihr Partner für zukunftsorientierte VR-Simulationen, Brandschutzunterweisung und Brandschutzhelferausbildung. Virtuelles Training, Brandschutzunterweisung und Brandschutzhelfer-Ausbildung. Realitätsnah, sicher und innovativ für Unternehmen jeder Größe.
+
+**Welche Brandschutz-Leistungen bieten wir an?**
+- Virtueller Feuerlöschtrainer: Trainieren Sie mit einem echten Feuerlöscher in einer virtuellen Umgebung. Die innovative und sichere Möglichkeit, den richtigen Umgang realistisch zu üben – ganz ohne echte Flammen.
+- Brandschutzunterweisung: Wir unterstützen Sie bei der jährlichen Pflichtunterweisung. Professionelle Einweisung in das Verhalten im Brandfall und die Handhabung von Löschgeräten.
+- Brandschutzhelfer: Fundierte Ausbildung Ihrer Mitarbeiter zu Brandschutzhelfern nach DGUV Information 205-023. Von der Brandverhütung bis zur organisierten Räumung.
+
+**Wie funktioniert der virtuelle Feuerlöschtrainer?**
+Der virtuelle Feuerlöschtrainer bietet eine innovative und sichere Möglichkeit, den richtigen Umgang mit Feuerlöschern realistisch zu trainieren – ganz ohne echte Flammen. Erfahren Sie mehr über unsere echten Feuerlöscher in der virtuellen Umgebung, unsere 360°-Szenarien und das All-In-One System.
+
+**Warum sind branchenspezifische Brandschutzlösungen für Ihr Unternehmen wichtig?**
+Wir bieten maßgeschneiderte Brandschutzkonzepte und branchenspezifische Lösungen, die exakt auf die rechtlichen Vorgaben und besonderen Gefahrenquellen Ihres Arbeitsumfelds zugeschnitten sind.
+- Brandschutz in der Arztpraxis: Spezifische Gefahren von Sauerstoffflaschen, Lasern und Laborbereichen meistern.
+- Brandschutz in der Apotheke: Sicherer Umgang mit brennbaren Flüssigkeiten, Chemikalien und Lagervorschriften.
+- Brandschutz im Unternehmen: Gewerbliche Lösungen für Verwaltung, Produktion und Logistikzentrum.
+- Ausbildungskonzepte: Didaktisch aufbereitete Trainingskonzepte zur nachhaltigen Wissensvermittlung der Mitarbeiter.
+
+---
+
+## VR-Trainer (vr-trainer.html)
+
+Der virtuelle Feuerlöschtrainer der 4dlernen GmbH bietet eine innovative und sichere Möglichkeit, den richtigen Umgang mit Feuerlöschern realistisch zu trainieren – ganz ohne echte Flammen.
+
+**Warum sind Aufladefeuerlöscher und Dauerdruckfeuerlöscher für das Training wichtig?**
+Die Feuerlöscher sind 1:1-Abbilder eines echten Modells – in Größe, Gewicht, Sicherung und Auslösemechanik. Das ermöglicht ein realistisches Training. Die virtuelle Umgebung zeigt verschiedene Brandszenarien, etwa Fettbrände oder Elektrobrände. Die Trainer können das Szenario individuell anpassen, beispielsweise die Feuergröße verändern, Rauchentwicklung simulieren oder einen Feueralarm aktivieren.
+
+Für ein professionelles Training bieten wir beide Feuerlöschertypen an: Aufladefeuerlöscher und Dauerdruckfeuerlöscher. Beide Modelle können gleichzeitig im Training eingesetzt werden.
+- Aufladefeuerlöscher: Dient als digitaler Zwilling des realen Geräts und bildet dessen Handhabung präzise nach. Nutzer erleben das Auslösen, Zielen und Löschen realitätsnah – inklusive typischem Bedienablauf.
+- Dauerdruckfeuerlöscher: Nutzer erleben das schnelle Aktivieren, den konstanten Druckverlauf und die typische Bedienlogik eines Dauerdrucklöschers.
+
+**Wie funktioniert das Teamtraining mit dem Doppelfeuerlöscher?**
+Unser System erlaubt das gleichzeitige Arbeiten mit zwei Feuerlöschern. Dadurch kann praxisnah trainiert werden, wie man im Team Brände effektiv und koordiniert bekämpft. Es sind verschiedene Löschmittel wählbar, um unterschiedliche Brandarten korrekt zu bekämpfen. So lernen die Teilnehmenden nicht nur die Handhabung und Technik des Löschens, sondern auch das richtige taktische Vorgehen im Ernstfall.
+
+**Was beinhaltet das mobile All-In-One System im Schutzkoffer?**
+Das komplette System wird in einem robusten Schutzkoffer untergebracht. Das sieht nicht nur professionell aus, sondern schützt Ihre hochwertige Hardware bei Transport und Lagerung.
+- Sicherer Transport: Spezialangefertigte Inlays garantieren, dass Laptops, Kabel, Controller und Zubehör wackelfrei und stoßsicher lagern.
+- Einfache Logistik: Das System kann von nur einer Person mühelos bewegt werden. Dank integrierter Rollen und einem ausziehbaren Griff lässt sich der Koffer rollen wie ein Reise-Trolley.
+
+---
+
+## 360° Szenarien (szenarien.html)
+
+Der virtuelle Feuerlöschtrainer bietet vielfältige Trainingsszenarien, die realistische Brandsituationen abbilden.
+
+**Welche Brandszenarien und 360°-Trainingsumgebungen sind verfügbar?**
+Je nach Bedarf kann durch verschiedene Trainingssituationen ideal auf Ihre Bedürfnisse eingegangen werden:
+- Schaltschrank / Industrie
+- Küche & Bad / Privathaushalt
+- Außenbereich & Natur
+- Abfall & Entsorgung
+- Gefahrstoffe & Öle
+- Weitere Szenarien: Immer wieder neue, regelmäßige Updates für unsere Software.
+
+**Wie funktionieren individuelle 360°-Aufnahmen Ihrer Arbeitsumgebung?**
+Entweder nutzen Sie die stets verfügbaren, vorhandenen Trainingssituationen aus unserem Standard-Portfolio, oder wir nehmen für Sie Ihre ganz eigene Trainingsumgebung auf. So entsteht ein maßgeschneidertes, praxisnahes Lernerlebnis.
+- Ihre Firma: Wir kommen mit unserem 360°-Equipment zu Ihnen vor Ort.
+- Bearbeitung: Wir animieren realistische Brände passend zur Perspektive.
+- Einsatzbereit: Ihre Mitarbeiter trainieren sofort in ihrer gewohnten, echten Abteilung.
+
+---
+
+## Leistungen (leistungen.html)
+
+Profitieren Sie von unserem holistischen Ansatz im Brandschutz. Von der technischen Innovation bis zur rechtssicheren Unterweisung der Mitarbeiter.
+
+**Virtueller Feuerlöschtrainer**
+Trainieren Sie mit einem echten Feuerlöscher in einer virtuellen Umgebung. Die innovative und sichere Möglichkeit, den richtigen Umgang realistisch zu üben – ganz ohne echte Flammen.
+
+**Brandschutzunterweisung**
+Wir unterstützen Sie bei der jährlichen Pflichtunterweisung. Eine professionelle Einweisung in das Verhalten im Brandfall und die Handhabung von Löschgeräten ist gesetzlich vorgeschrieben (z.B. gemäß § 10 ArbSchG) und rettet im Ernstfall Leben.
+- Erfüllt die jährliche Unterweisungspflicht
+- Verhalten im Brandfall
+- Richtiges Alarmieren
+- Flucht- und Rettungswege kennenlernen
+
+**Ausbildung zum Brandschutzhelfer**
+Fundierte Ausbildung Ihrer Mitarbeiter zu Brandschutzhelfern nach DGUV Information 205-023. Von der Brandverhütung bis zur organisierten Räumung im Falle eines Feueralarms.
+- Theorie: Rechtliche Grundlagen & Brandlehre.
+- Praxis: Handhabung von Feuerlöschern (oft mit VR-Trainer).
+
+---
+
+## Für Unternehmen (unternehmen.html)
+
+Wir bieten maßgeschneiderte Brandschutzkonzepte und branchenspezifische Lösungen.
+
+**Warum sind branchenspezifische Brandschutzlösungen für Ihr Unternehmen wichtig?**
+Wir bieten maßgeschneiderte Brandschutzkonzepte und branchenspezifische Lösungen, die exakt auf die rechtlichen Vorgaben und besonderen Gefahrenquellen Ihres Arbeitsumfelds zugeschnitten sind.
+- Brandschutz in der Arztpraxis: Spezifische Gefahren von Sauerstoffflaschen, Lasern und Laborbereichen meistern.
+- Brandschutz in der Apotheke: Sicherer Umgang mit brennbaren Flüssigkeiten, Chemikalien und Lagervorschriften.
+- Brandschutz im Unternehmen: Gewerbliche Lösungen für Verwaltung, Produktion und Logistikzentrum.
+- Ausbildungskonzepte: Didaktisch aufbereitete Trainingskonzepte zur nachhaltigen Wissensvermittlung der Mitarbeiter.
+
+---
+
+## Kontakt & Service (kontakt.html)
+
+Haben Sie Fragen oder benötigen Sie Informationen über Konditionen und Lieferung? Setzen Sie sich gern mit uns in Verbindung! Nutzen Sie auch unseren Rückrufservice für ein unverbindliches Erstgespräch.
+
+**Kontakt & Standorte**
+- Hauptsitz: 4dlernen GmbH, Untere Weidenstraße 9, 81543 München
+- Produktion: 4dlernen GmbH, Ottobrunnerstraße 28, 82008 Unterhaching
+- Telefon: +49 89 45208917
+- E-Mail: info@4dlernen.de
+
+---
+
+## Bildbeschreibungen (Alt-Texte)
+
+Diese Website enthält visuelle Elemente, die Folgendes darstellen:
+- Detailaufnahme eines virtuellen Aufladefeuerlöschers der 4dlernen GmbH, der 1:1 einem echten Feuerlöscher nachempfunden ist und realistisches Training inklusive typischem Bedienablauf ermöglicht.
+- Detailaufnahme eines virtuellen Dauerdruckfeuerlöschers der 4dlernen GmbH in einer Trainingssituation ohne echtes Feuer.
+- Zwei Mitarbeiter in Firmenkleidung trainieren gleichzeitig mit virtuellen Feuerlöschern der 4dlernen GmbH das taktische Verhalten bei einem gemeinsamen Löscheinsatz (Teamtraining).
+- Geöffneter Schutzkoffer (Trolley) von 4dlernen GmbH, der das gesamte Hardware-System des virtuellen Feuerlöschtrainers stoßsicher lagert: Laptop, Handsteuerungen und Kabel.
+- Geschlossener, robuster Transport-Schutzkoffer (Trolley) von 4dlernen GmbH mit Rollen und ausziehbarem Griff für die mobile Brandschutzausbildung.
+- 360-Grad-Ansicht eines virtuellen Brandszenarios: Ein brennender Schaltschrank in einer industriellen Produktionshalle.
+- 360-Grad-Ansicht eines virtuellen Brandszenarios: Ein entstehender Brand in einem Badezimmer eines Privathaushalts.
+- 360-Grad-Ansicht eines virtuellen Brandszenarios: Ein Flächenbrand in einem Waldgebiet im Außenbereich.
+- 360-Grad-Ansicht eines virtuellen Brandszenarios: Ein brennender Müllcontainer auf einem Entsorgungshof.
+- 360-Grad-Ansicht eines virtuellen Brandszenarios: Ein Brand von Gefahrstoffen und Ölen in einem Lagerraum.
+- Detailaufnahme des virtuellen Dauerdruckfeuerlöschers der 4dlernen GmbH im Einsatz in einer Brandschutzunterweisung.
