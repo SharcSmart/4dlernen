@@ -50,7 +50,7 @@ Das komplette System wird in einem robusten Schutzkoffer untergebracht. Das sieh
 | Kriterium | Virtuelles VR-Training (4dlernen) | Klassisches Brandschutz-Training |
 | :--- | :--- | :--- |
 | **Trainingsobjekt** | **Echter, umgebauter Feuerlöscher** (1:1 in Größe & Gewicht) | Echter Feuerlöscher |
-| **Kosten & Verbrauchsmaterial** | Keine laufenden Kosten (kein Gas, kein Löschmittel) | Hohe Kosten für Gas, Wiederbefüllung und Entsorgung |
+| **Kosten & Verbrauchsmaterial** | Keine verbrauchsabhängigen Kosten (kein Gas, kein Löschmittel) | Hohe Kosten für Gas, Wiederbefüllung und Entsorgung |
 | **Sicherheit & Unfallrisiko** | 100% sicher, gefahrlos trainieren ohne echte Flammen | Restrisiko durch echtes Feuer, Hitze und Druck |
 | **Flexibilität & Wetter** | Wetterunabhängig, In- und Outdoor nutzbar | Stark wetterabhängig (Wind/Regen), meist nur Outdoor |
 | **Rüstzeit (Auf- & Abbau)** | Sofort einsatzbereit (Plug & Play) | Aufwändiger Aufbau, Genehmigungen oft nötig |
