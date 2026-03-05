@@ -118,7 +118,11 @@
                 <div class="lg:w-1/2">
                     <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
                         <h2 class="text-3xl font-bold mb-6">Schreiben Sie uns</h2>
-                        <form action="mailto:info@4dlernen.de" method="POST" enctype="text/plain" class="space-y-6">
+                        <form action="https://formsubmit.co/info@4dlernen.de" method="POST" class="space-y-6">
+                            <!-- Anti-Spam Honeypot -->
+                            <input type="text" name="_honey" style="display:none">
+                            <!-- Redirects back to kontakt.html after success -->
+                            <input type="hidden" name="_next" value="https://www.4dlernen.de/kontakt.html">
                             <div>
                                 <label class="block text-sm font-semibold text-gray-700 mb-2">Name (Pflichtfeld)</label>
                                 <input type="text" name="Name"
