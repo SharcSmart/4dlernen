@@ -53,4 +53,5 @@ Anschließend können Sie die Seite im Browser unter `http://localhost:8000` auf
 
 ## TODOs
 
-* **Kontaktformular:** Das Formular wurde vorübergehend auf die alte `mailto:`-Version zurückgesetzt. Es muss in Zukunft wieder eine funktionierende, serverseitige Lösung (oder ein anderes sicheres Formular-Tool) implementiert werden.
+* **Kontaktformular:** Das Formular wurde vorübergehend auf die alte `mailto:`-Version zurückgesetzt. Es muss in Zukunft wieder eine funktionierende, serverseitige Lösung implementiert werden.
+  * **Empfohlene/Zuletzt implementierte Lösung:** Die beste, rein auf HTML basierende Lösung war die Nutzung von **FormSubmit** (`https://formsubmit.co/info@4dlernen.de`). Hierbei wurde das Formular über einen POST-Request an FormSubmit gesendet. Zusätzlich wurden ein verstecktes "Honeypot"-Feld (`name="_honey"`) zur Spam-Abwehr sowie ein Weiterleitungsfeld (`name="_next" value="..."`) genutzt, um den Nutzer nach dem Absenden auf der Seite zu behalten.
