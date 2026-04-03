@@ -1,0 +1,54 @@
+name: Build and Auto-Commit Blog
+
+on:
+  push:
+    # Trigger the action whenever a push happens on main
+    branches:
+      - main
+    # Only run this workflow if markdown files in the blog folder or the script itself changes
+    paths:
+      - 'content/blog/**.md'
+      - 'build-blog.mjs'
+      - 'package.json'
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed so the Action can push back to the repository
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate static HTML from Markdown
+        run: npm run build:blog
+
+      - name: Check for modified files
+        id: git-check
+        run: |
+          git status
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes_exist=true" >> $GITHUB_ENV
+          else
+            echo "changes_exist=false" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and push changes
+        if: env.changes_exist == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.html
+          git commit -m "Auto-build new blog HTML from Markdown [skip ci]"
+          git push
