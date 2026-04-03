@@ -1,7 +1,6 @@
 ---
-title: "Creation of a 'Decision Matrix' Landing Page"
+title: "Digitales Brandschutztraining & Simulationen 2026: Der Vergleich"
 date: "2026-04-02T03:29:30.068Z"
-author: "BobUpAI"
 ---
 
 # Digitales Brandschutztraining & Simulationen 2026: Der Vergleich für Brandschutzbeauftragte

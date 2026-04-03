@@ -91,7 +91,7 @@ function generateBlogPostHTML(meta, contentHtml) {
     <header class="pt-32 pb-16 bg-brand-dark text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-6 max-w-4xl mx-auto">${meta.title}</h1>
-            <p class="text-gray-300">Veröffentlicht am: ${new Date(meta.date).toLocaleDateString("de-DE")} | Autor: ${meta.author}</p>
+            <p class="text-gray-300">Veröffentlicht am: ${new Date(meta.date).toLocaleDateString("de-DE")}</p>
         </div>
     </header>
 
@@ -133,7 +133,6 @@ function generateBlogIndexHTML(posts) {
         <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
             <div class="text-sm text-brand-500 font-bold mb-2">${new Date(post.date).toLocaleDateString("de-DE")}</div>
             <h2 class="text-2xl font-bold text-gray-900 mb-4"><a href="blog-${post.slug}.html" class="hover:text-brand-500 transition-colors">${post.title}</a></h2>
-            <p class="text-gray-600 mb-6">Autor: ${post.author}</p>
             <a href="blog-${post.slug}.html" class="text-brand-600 font-semibold hover:text-brand-800">Artikel lesen &rarr;</a>
         </div>
         `;
