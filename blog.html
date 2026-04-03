@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Magazin | 4dlernen GmbH</title>
+    <meta name="description" content="Aktuelle Artikel und Fachbeiträge rund um digitales Brandschutztraining und VR.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488',
+                            900: '#134e4a', dark: '#0f172a', red: '#e11d48',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm drop-shadow py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-80 transition">
+                    <div class="text-2xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="leistungen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
+                    <a href="vr-trainer.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">VR-Trainer</a>
+                    <a href="unternehmen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für Unternehmen</a>
+                    <a href="brandschutz-wissen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Wissen</a>
+                    <a href="blog.html" class="text-sm font-bold text-brand-500 transition-colors">Blog</a>
+                    <a href="kontakt.html" class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 bg-brand-dark text-white text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Blog & Magazin</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Expertenartikel, Vergleiche und Best Practices für modernes Brandschutztraining.</p>
+        </div>
+    </header>
+
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-sm text-brand-500 font-bold mb-2">1.4.2026</div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4"><a href="blog-creation-of-a-decision-matrix-landing-page.html" class="hover:text-brand-500 transition-colors">Creation of a 'Decision Matrix' Landing Page</a></h2>
+            <p class="text-gray-600 mb-6">Autor: BobUpAI</p>
+            <a href="blog-creation-of-a-decision-matrix-landing-page.html" class="text-brand-600 font-semibold hover:text-brand-800">Artikel lesen &rarr;</a>
+        </div>
+        
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400 text-sm">
+                <a href="index.html" class="hover:text-white transition-colors">Startseite</a>
+                <a href="blog.html" class="hover:text-white transition-colors">Blog</a>
+                <a href="kontakt.html" class="hover:text-white transition-colors">Impressum & Datenschutz</a>
+            </div>
+            <div class="mt-8 text-gray-500 text-xs">
+                &copy; 2026 4dlernen GmbH. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
