@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | 4dlernen GmbH</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], },
+                    colors: {
+                        brand: { 50: '#f0fdfa', 100: '#ccfbf1', 500: '#14b8a6', 600: '#0d9488', 900: '#134e4a', dark: '#0f172a', red: '#e11d48', }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 shadow-md py-0" id="navbar" style="height: 4.5rem;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-full items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer">
+                    <div class="text-3xl font-extrabold tracking-tight text-brand-dark flex items-center gap-2">
+                        <i class="fa-solid fa-fire-burner text-brand-red"></i>
+                        <span>4D<span class="text-brand-500">LERNEN</span></span>
+                    </div>
+                </a>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="leistungen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Leistungen</a>
+                    <a href="vr-trainer.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">VR-Trainer</a>
+                    <a href="unternehmen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Für Unternehmen</a>
+                    <a href="brandschutz-wissen.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Wissen</a>
+                    <a href="blog.html" class="text-sm font-semibold text-gray-600 hover:text-brand-500 transition-colors">Blog</a>
+                    <a href="kontakt.html" class="px-5 py-2.5 rounded-full bg-brand-dark text-white text-sm font-semibold hover:bg-brand-500 hover:shadow-lg transition-all duration-300">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-24 min-h-screen">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold mb-8 text-brand-dark">Impressum</h1>
+            <div class="prose prose-lg text-gray-600">
+                <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Gesetzliche Anbieterkennung:</h2>
+                <p>4dlernen GmbH</p>
+                <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Vertreten durch:</h2>
+                <p>Julian Wloka<br>Untere Weidenstraße 9<br>81543 München<br>Deutschland</p>
+                <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Kontakt:</h2>
+                <p>Telefon: +49 89 45208917<br>E-Mail: <a href="mailto:info@4dlernen.de" class="text-brand-500 hover:underline">info@4dlernen.de</a></p>
+                <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">USt-IdNr.:</h2>
+                <p>DE 319190761</p>
+                <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Produktion:</h2>
+                <p>4dlernen GmbH<br>Ottobrunnerstraße 28<br>82008 Unterhaching</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Minimal -->
+    <footer id="kontakt" class="bg-brand-dark text-white pt-12 pb-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>&copy; 2018 - 2026 4dlernen GmbH. Alle Rechte vorbehalten.</p>
+                <ul class="flex space-x-4">
+                    <li><a href="impressum.html" class="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
+                    <li><a href="datenschutz.html" class="text-gray-400 hover:text-white transition-colors">Datenschutzerklärung</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
